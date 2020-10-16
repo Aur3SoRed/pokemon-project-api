@@ -1,28 +1,44 @@
 .randomPokemonBox {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: black;
+  width: 73%;
+  height: 73%;
+  color: rgb(0, 0, 0);
   text-align: center;
-  flex-wrap: wrap;
-  border: 1px gray solid;
-  padding: 10px;
+  position: absolute;
+  top: 1000px;
+  left: 113px;
 }
 .randomPokemonBox > * {
-  min-width: 30%;
+  min-width: 50%;
 }
-
 .wildPokemon {
-  /* flex-direction: column; */
   display: flex;
   flex-wrap: wrap;
   height: auto;
+
+
 }
+.parpadear {
+  animation: parpadeo 1s infinite;
+}
+@keyframes parpadeo {
+  100% {
+    transform: scale(0);
+  }
+}
+
 .collectionBox {
   display: flex;
   flex-wrap: wrap;
   display: flex;
-  border: 1px black solid;
+  background-color: silver;
+  margin-bottom: 2%;
+}
+
+
+.prueba {
+position: absolute;
+top: -520px;
+left: 500px;
+width: 300px;
+
 }
